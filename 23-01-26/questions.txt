@@ -1,0 +1,76 @@
+Q.  Create a Node.js program that manages employee records using the File System (fs) module.  
+
+Scenario
+You are building a simple Employee Record Manager where:
+
+Employee data is stored in a text / JSON file
+
+Files and folders are created dynamically
+
+Employee data can be added, read, searched, and deleted
+
+
+Task 1: Create Folder 
+Create a folder named:
+
+employees
+Requirements:
+
+Use fs.mkdir() or fs.mkdirSync()
+
+If the folder already exists, the program must not crash
+
+Task 2: Create File & Write Data 
+Inside the employees folder:
+
+Create a file named:
+
+employees.txt
+Write the following employee data:
+
+ID: 101
+Name: Rahul
+Department: Development
+Requirements:
+
+Use UTF-8 encoding
+
+Use fs.writeFile() or fs.writeFileSync()
+
+Task 3: Append New Employee
+Append another employee record to the same file:
+
+ID: 102
+Name: Anjali
+Department: HR
+Task 4: Read File Content 
+Read the employees.txt file
+
+Display the entire content in the console
+
+Task 5: Search Employee by Name 
+Search for employee name "Anjali"
+
+If found → print:
+
+Employee Found
+Else → print:
+
+Employee Not Found
+Task 6: Delete File
+Delete employees.txt
+
+Display message:
+
+Employee file deleted successfully
+Task 7: Error Handling 
+Ensure proper error handling so that:
+
+Program does not crash if:
+
+File does not exist
+
+Folder already exists
+
+Display meaningful error messages
+
