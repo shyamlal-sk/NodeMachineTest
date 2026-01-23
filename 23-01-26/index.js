@@ -75,7 +75,7 @@ const fs = require('fs');
 // }
 
 
-////Delete File Delete employees.txt
+////6. Delete File Delete employees.txt
 
 // fs.unlink('./employees/emp1.txt', (err) =>{
 //     if(err) {
@@ -84,3 +84,28 @@ const fs = require('fs');
 //         console.log("File Deleted successfully!")
 //     }
 // });
+
+// const deleteFile = (filename) => {
+// try {
+//     fs.unlinkSync(filename);
+//     console.log("deleted")
+// } catch (error) {
+//     console.log("error", error);
+// } finally {
+//     console.log("It runs anyways")
+// }
+// };
+
+// deleteFile('txt.txt');
+
+const makeaFile = (filename, content) => {
+    try {
+        fs.writeFileSync(filename, content);
+        console.log("FileWritten");
+    } catch(error) {
+        console.log("Error!");
+    }
+}
+
+makeaFile('test.txt', 'content')
+
