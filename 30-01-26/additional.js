@@ -92,7 +92,7 @@ const appendFileEmitter = new EventEmitter;
 
 appendFileEmitter.on('appended', ()=>{
     console.log('System info appended to file');
-})
+});
 
 try {
     fs.appendFileSync(fullpath, sysinfo);
@@ -100,4 +100,4 @@ try {
     appendFileEmitter.emit('appended');
 } catch (error) {
     console.log('error appending system info',error);
-}
+};
