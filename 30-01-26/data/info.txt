@@ -1,0 +1,8 @@
+Node.js Machine Test
+ platform : win32,
+                 
+ total mem : 33630187520,
+                 
+ free mem : 19894513664,
+                 
+ CPU count : 12
