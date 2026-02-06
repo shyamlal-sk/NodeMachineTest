@@ -7,12 +7,14 @@ a) What is **asynchronous programming**?
 
 b) What is the **call stack**?  
 
-    In node, it is a kind of waiting list where tasks are held before being called into the 
-    event loop, based on their priority according to whether they are micro or macrotasks
-
+    Call stack executes tasks continuosly, receiving tasks to do
+    from event loop, in given priority.
+   
 c) What is the **event loop**?  
 
-    In JS, Event loop is where tasks called from callstack and run. 
+    Event loop orchastrates the management of tasks in callstack
+    and queues to move them between callstack, micro/macro task and callback queues. 
+    it watches callstack if it becomes free and gives it more tasks.
     
 d) What is a **microtask**?  
 
