@@ -1,0 +1,36 @@
+### Q5. Answer the following
+
+a) What is **asynchronous programming**?  
+
+    In asynchronous programming, one task doesnt wait for another task to finish.
+    Multiple operations are run at a time. It is non sequential.
+
+b) What is the **call stack**?  
+
+    In node, it is a kind of waiting list where tasks are held before being called into the 
+    event loop, based on their priority according to whether they are micro or macrotasks
+
+c) What is the **event loop**?  
+
+    In JS, Event loop is where tasks called from callstack and run. 
+    
+d) What is a **microtask**?  
+
+    micro tasks such as promises are called first from a callstack.
+
+e) What is a **macrotask**?
+
+    macro tasks such as setTimout(), runs only after microtasks are run.
+
+   
+## SECTION D – Output Prediction.
+
+a). 
+// "Hello"
+// "World"
+
+b).
+//"A"
+//"C"
+//"B"
+

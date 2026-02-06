@@ -1,0 +1,24 @@
+GET
+--------------------------------
+METHOD:  GET
+URL:     localhost:3000/users
+BODY :   NONE
+RESPONSE : 
+{
+    "message": "User API working"
+}
+
+
+POST
+---------------------------------
+
+METHOD:  POST
+URL:     localhost:3000/users
+BODY :   
+{
+ "name": "Yan",   "role": "Developer" 
+}
+RESPONSE : 
+{
+  "name": "Yan",   "role": "Developer" 
+}
